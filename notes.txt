@@ -1,0 +1,2 @@
+http://www.zeitoun.net/articles/comet_and_php/start
+http://daneden.github.io/animate.css/

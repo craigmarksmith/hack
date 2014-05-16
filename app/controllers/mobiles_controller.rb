@@ -1,0 +1,2 @@
+class MobilesController < ApplicationController
+end
