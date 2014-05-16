@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'active_model_serializers'
 gem 'uglifier'
+gem 'rails_12factor', group: :production
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
