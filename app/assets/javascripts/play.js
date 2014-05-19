@@ -1,4 +1,4 @@
-window.onload = function(){
+function Play(){
   var previousId = null;
   setInterval(function(){
     $.getJSON('/shots.json', function(data){
@@ -10,4 +10,4 @@ window.onload = function(){
       }
     });
   }, 500);
-}
+};
