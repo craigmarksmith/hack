@@ -2,8 +2,29 @@
   <%= stylesheet_link_tag "play" %>
 <% end %>
 
+<video width="320" height="240" autoplay="autoplay" loop id="wait">
+  <source src="/movies/wait.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" class="result-video" id='left'>
+  <source src="/movies/left.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" class="result-video" id='right'>
+  <source src="/movies/left.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" class="result-video" id='middle'>
+  <source src="/movies/left.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 <%= javascript_tag do %>
   window.onload = function(){
-    new Play();
+    var play = new Play();
+    play.setUp();
   };
 <% end %>

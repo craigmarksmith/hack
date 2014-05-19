@@ -1,0 +1,11 @@
+video{
+  position:absolute;
+  top:100px;
+  left:200px;
+  z-index:1;
+}
+
+.result-video {
+  z-index:2;
+  display:none;
+}
