@@ -13,19 +13,21 @@ Play.prototype.setUp = function(){
         direction = mostRecentDirection['direction'];
         previousId = mostRecentDirection['id'];
         me.switchVideo(direction);
-        console.log(direction);
       }
     });
   }, 500);
 };
 
 Play.prototype.switchVideo = function(direction){
-  var directionVideo = document.getElementById(direction);
+  var options = ['hit', 'miss']
+  hitOrMiss = options[Math.floor((Math.random() * 2))];
+  var elementId = direction+'_'+hitOrMiss;
+  var directionVideo = document.getElementById(elementId);
   var waitingVideo = document.getElementById('wait');
   directionVideo.style.display = 'block';
   directionVideo.play();
   setTimeout(function(){
     directionVideo.style.display = 'none';
-  }, 7000);
+  }, 3000);
 
 };
