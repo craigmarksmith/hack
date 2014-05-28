@@ -9,3 +9,14 @@ video{
   z-index:2;
   display:none;
 }
+
+#end{
+  display:none;
+}
+
+#end.show {
+  display:block;
+  z-index:10;
+  height:300px;
+  width:300px;
+}

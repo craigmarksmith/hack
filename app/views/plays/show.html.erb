@@ -40,6 +40,11 @@ Your browser does not support the video tag.
 <div>Challenger: <span id="cscore">0</span></div>
 <div>Iggy: <span id="iscore">0</span></div>
 
+<div id='end'>
+  You <span id="result"></span>
+  <a id="reset" href='#'>Play again</a>
+</div>
+
 <%= javascript_tag do %>
   window.onload = function(){
     var play = new Play();
