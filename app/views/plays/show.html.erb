@@ -1,7 +1,7 @@
 <% content_for :head  do %>
   <%= stylesheet_link_tag "play" %>
 <% end %>
-
+<body class="play">
 <video width="960" height="540" autoplay="autoplay" muted loop id="wait">
   <source src="/movies/wait.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -53,3 +53,4 @@ Your browser does not support the video tag.
     play.setUp();
   };
 <% end %>
+</body>

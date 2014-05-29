@@ -1,6 +1,7 @@
 <% content_for :head  do %>
   <%= stylesheet_link_tag "mobile" %>
 <% end %>
+<body class='mobile'>
 <%= image_tag "westfield_disc.png", id:'westfield-logo'%>
 <%= javascript_tag do %>
   window.onload = function(){
@@ -8,3 +9,4 @@
     dragAndDrop.setUp();
   };
 <% end %>
+</body>
