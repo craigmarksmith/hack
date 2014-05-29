@@ -96,10 +96,16 @@ Play.prototype.setDisplayScore = function(me){
 
 Play.prototype.displayWinnerScreen = function(me){
   if((me.getScore('me', me) == 'Winner') || (me.getScore('iggy', me) == 'Winner')){
+    var wonOrLost = '';
+    if(me.getScore('me', me) == 'Winner'){
+      wonOrLost = 'Won!';
+    }else{
+      wonOrLost = 'Lost!';
+    }
     setTimeout(function(){
       endScreen = $('#end');
       endScreen.addClass('show');
-      endScreen.find('result').innerHTML = 'Win!'
+      endScreen.find('#result').text(wonOrLost);
     }, 3000);
   }
 }
