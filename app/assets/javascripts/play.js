@@ -51,7 +51,9 @@ Play.prototype.updateScore = function(hitOrMiss, me){
   if(hitOrMiss == 'miss'){
     me.gameScore = {me:me.gameScore['me']+=1, iggy:me.gameScore['iggy']};
   }
-  me.setDisplayScore(me);
+  setTimeout(function(){
+    me.setDisplayScore(me);
+  },4500);
 }
 
 Play.prototype.getScore = function(player, me){
@@ -72,7 +74,7 @@ Play.prototype.getScore = function(player, me){
   if((challenger > 2) && (iggy > 2)){
     if(thisPlayer == otherPlayer+1){
     // if this player is 1 greater than other player
-      return 'Advantage';
+      return 'Adv';
     }else if(thisPlayer == otherPlayer-1){
       return '40';
     }else if((thisPlayer - otherPlayer) > 1){

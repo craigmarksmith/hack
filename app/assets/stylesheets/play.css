@@ -30,3 +30,19 @@ video{
   margin-left: -500px;
   background-color:white;
 }
+
+#scores div {
+  display:inline-block;
+  color:red;
+  font-family:"Lato", sans-serif
+}
+
+#scores span {
+  display:inline-block;
+  font-weight:bold;
+  font-size:90px;
+  width: 200px;
+  color:white;
+  background-color:black;
+  padding-left:25px
+}
