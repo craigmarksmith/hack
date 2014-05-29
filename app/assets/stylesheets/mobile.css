@@ -1,3 +1,7 @@
+body{
+  background-image:url('/assets/grass.png');
+}
+
 #westfield-logo {
   position:absolute;
   top:1000px;
