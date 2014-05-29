@@ -57,7 +57,7 @@ Play.prototype.updateScore = function(hitOrMiss, me){
 }
 
 Play.prototype.getScore = function(player, me){
-  var scores = [0, 15, 30, 40, "Winner"]
+  var scores = [0, 15, 30, 40, "Vic"]
 
   var iggy = me.gameScore['iggy'];
   var challenger = me.gameScore['me'];
@@ -97,9 +97,9 @@ Play.prototype.setDisplayScore = function(me){
 }
 
 Play.prototype.displayWinnerScreen = function(me){
-  if((me.getScore('me', me) == 'Winner') || (me.getScore('iggy', me) == 'Winner')){
+  if((me.getScore('me', me) == 'Vic') || (me.getScore('iggy', me) == 'Vic')){
     var wonOrLost = '';
-    if(me.getScore('me', me) == 'Winner'){
+    if(me.getScore('me', me) == 'Vic'){
       wonOrLost = 'Won!';
     }else{
       wonOrLost = 'Lost!';
