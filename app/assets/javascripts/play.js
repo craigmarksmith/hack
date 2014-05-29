@@ -41,7 +41,7 @@ Play.prototype.switchVideo = function(elementId){
   directionVideo.play();
   setTimeout(function(){
     directionVideo.style.display = 'none';
-  }, 3000);
+  }, 4500);
 };
 
 Play.prototype.updateScore = function(hitOrMiss, me){
