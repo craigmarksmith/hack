@@ -25,7 +25,7 @@ DragAndDrop.prototype.setUp = function(){
       obj.style.webkitTransition = '';
       obj.style.top = '1000px';
       obj.style.left = '350px';
-    }, 3000);
+    }, 4500);
   });
 };
 
