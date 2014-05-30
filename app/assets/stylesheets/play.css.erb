@@ -1,0 +1,84 @@
+body.play{
+  font-family: 'VT323', sans-serif;
+  background-image:url(<%=asset_path "iggytennis.jpg"%>);
+}
+
+video{
+  border-radius:25px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  margin-top: -300px;
+  margin-left: -500px;
+  z-index:1;
+  border:3px solid white;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.result-video {
+  z-index:2;
+  display:none;
+}
+
+#scores {
+  position:fixed;
+  top:75%;
+  left:10%;
+}
+
+#scores div {
+  display:inline-block;
+  color:white;
+  border-radius:15px;
+  background-color:black;
+  width: 200px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+
+#scores span {
+  display:block;
+  font-weight:bold;
+  font-size:90px;
+  color:#e2f938;
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+}
+
+#end{
+  display:none;
+}
+
+#end.show {
+  display:block;
+  position:fixed;
+  top:50%;
+  left:50%;
+  z-index:10;
+  border:1px solid red;
+  margin-top: -300px;
+  margin-left: -500px;
+  background-color:white;
+  border:3px solid white;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  border-radius:25px;
+  width:920px;
+  height:499px;
+  padding:20px;
+  text-align:center;
+}
+
+#end p.result-text{
+  font-size:220px;
+  color: green;
+  text-shadow: -1px 0 :#0e42e9, 0 1px :#0e42e9, 1px 0 :#0e42e9, 0 -1px :#0e42e9;
+  margin-top:50px;
+  margin-bottom:60px;
+}
+
+#end #reset{
+  color:#0e42e9;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:40px;
+}

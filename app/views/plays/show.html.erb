@@ -1,56 +1,58 @@
 <% content_for :head  do %>
   <%= stylesheet_link_tag "play" %>
+  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=VT323" %>
 <% end %>
+
 <body class="play">
-<video width="960" height="540" autoplay="autoplay" muted loop id="wait">
-  <source src="/movies/wait.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <video width="960" height="540" autoplay="autoplay" muted loop id="wait">
+    <source src="/movies/wait.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 
-<video width="960" height="540" class="result-video" muted id='left_miss'>
-  <source src="/movies/left_miss.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <video width="960" height="540" class="result-video" muted id='left_miss'>
+    <source src="/movies/left_miss.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 
-<video width="960" height="540" class="result-video" muted id='left_hit'>
-  <source src="/movies/left_hit.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <video width="960" height="540" class="result-video" muted id='left_hit'>
+    <source src="/movies/left_hit.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 
-<video width="960" height="540" class="result-video" muted id='right_miss'>
-  <source src="/movies/right_miss.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <video width="960" height="540" class="result-video" muted id='right_miss'>
+    <source src="/movies/right_miss.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 
-<video width="960" height="540" class="result-video" muted id='right_hit'>
-  <source src="/movies/right_hit.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <video width="960" height="540" class="result-video" muted id='right_hit'>
+    <source src="/movies/right_hit.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 
-<video width="960" height="540" class="result-video" muted id='middle_hit'>
-  <source src="/movies/middle_hit.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <video width="960" height="540" class="result-video" muted id='middle_hit'>
+    <source src="/movies/middle_hit.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 
-<video width="960" height="540" class="result-video" muted id='middle_miss'>
-  <source src="/movies/middle_miss.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+  <video width="960" height="540" class="result-video" muted id='middle_miss'>
+    <source src="/movies/middle_miss.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 
-<div id="scores">
-  <div>Challenger: <span id="cscore">0</span></div>
-  <div>Iggy: <span id="iscore">0</span></div>
-</div>
+  <div id="scores">
+    <div><span id="cscore">0</span>Challenger</div>
+    <div><span id="iscore">0</span>Iggy</div>
+  </div>
 
-<div id='end'>
-  You <span id="result"></span>
-  <a id="reset" href='#'>Play again</a>
-</div>
+  <div id='end'>
+    <p class='result-text'>You <span id="result"></span></p>
+    <p><a id="reset" href='#'><blink>Play again?</blink></a></p>
+  </div>
 
-<%= javascript_tag do %>
-  window.onload = function(){
-    var play = new Play();
-    play.setUp();
-  };
-<% end %>
+  <%= javascript_tag do %>
+    window.onload = function(){
+      var play = new Play();
+      play.setUp();
+    };
+  <% end %>
 </body>

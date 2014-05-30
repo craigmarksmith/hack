@@ -53,7 +53,7 @@ Play.prototype.updateScore = function(hitOrMiss, me){
   }
   setTimeout(function(){
     me.setDisplayScore(me);
-  },4500);
+  },3500);
 }
 
 Play.prototype.getScore = function(player, me){
@@ -79,12 +79,12 @@ Play.prototype.getScore = function(player, me){
       return '40';
     }else if((thisPlayer - otherPlayer) > 1){
     // if this player > 1 greater than the other player
-      return 'Winner';
+      return 'Vic';
     }else if(thisPlayer == otherPlayer){
     // if both players are the same
       return 40;
     }else{
-      return 'Loser'
+      return ':('
     }
   }else{
     return scores[me.gameScore[player]];
